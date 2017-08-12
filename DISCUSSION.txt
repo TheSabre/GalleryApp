@@ -1,0 +1,50 @@
+Android SDK:
+
+Android SDK(software development kit) consists of various packages necessary for developing the application.
+Some examples of the packages are API packages, Google USB driver(required for the running the application on our own device),
+HAXM installer(for accelerating the launch of virtual device) etc.
+//////////////////////////
+ADT:
+
+ADT(Android Developers tools) is a plugin available for Eclipse IDE. This plugin is vital to use SDK.
+//////////////////////////
+Android Manifest:
+
+Android Manifest is an xml file while contains all the information about the application. This information includes
+the minimum API, target API, the icon for the application, the theme of the application. The manifest file can be
+used to set the launcher activity. Every activity to be used in the application must be declared in the Android
+manifest file else it throws a runtime error.
+//////////////////////////
+Android Emulator:
+
+Android Emulator or AVD is a virtual device which is primarily used to test the application. The application can be
+tested across various devices to check the functionality and also the UI. It is important to check the application with 
+multiple devices with different size and computing power. If the application is designed for just one screen size the 
+size of the UI(buttons, textView etc) would look different on every device. Also if the application does some heavy computing 
+and targets many small devices, it is critical to check if the application works well on those devices and optimize
+the application accordingly. If the application is lagging it would throw a warning saying "application skipping frames. 
+The application is doing too much work on its main thread". 
+//////////////////////////
+DDMS:
+
+DDMS(Dalvik Debug Monitor Server) is a tools primarily used for debugging purposes. For example, in this assignment I used
+DDMS to pull the database file generated in the AVD by the application to check if the tables are created and
+the values are inserted or not. However, it can also monitor the threads running in the application, heaps, network statistics
+and much more.
+//////////////////////////
+Purpose of MainActivity.java:
+
+MainActivity.java is the default name given to the launcher activity or the first activity that is created.
+MainActivity.java can be considered as the brain of the activity, meaning it contains all the logic required to do the 
+work. For example, in this assignment we were required to set some restrictions/constraints on the edit text field.
+This required some logic, and thus it uses java. Also, we had to retrieve and send the information to the database, which
+again requires some computing. All this work needs to be done in MainActivity.java. It is important to note that, every
+activity named MainActivity.java need not be the launcher activity. As mentioned earlier, it is decided by the Android
+Manifest file.
+//////////////////////////
+Purpose of main_activity.xml
+
+main_activity.xml is the design layout of the MainActivity.java provided main_activity.xml is the parameter given to
+setContentView() method in onCreate() method of MainActivity.java. main_activity.xml contains the UI of the activity.
+It is used to create buttons, EditText, TextView, CheckBox etc. The background of the application, color of the buttons,
+background of EditText etc can be modified using main_activity.xml.

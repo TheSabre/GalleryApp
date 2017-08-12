@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VisitGallery</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+    <string name="s_up">Sign Up</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="f_name">Enter your first name</string>
+    <string name="l_name">Enter your last name</string>
+    <string name="no">Enter your student ID</string>
+    <string name="pass">Enter your password</string>
+    <string name="reg">Register</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="s_in">Sign In</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="mum">Mumbai</string>
+    <string name="ny">New York</string>
+    <string name="tok">Tokyo</string>
+    <string name="gal">Gallery</string>
+
+</resources>
